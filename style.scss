@@ -16,6 +16,17 @@ a {
   border-bottom: dotted 1px solid $green;
 }
 
+input {
+  &:checked {
+    ~label[for='note1'] {
+      p {
+        background: red;
+        
+      }
+    }
+  }
+}
+
 body {
   font-family: 'Fira Sans', sans-serif;
   > header#masthead {

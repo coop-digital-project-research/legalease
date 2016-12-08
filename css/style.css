@@ -10,6 +10,9 @@ a {
   color: inherit;
   border-bottom: dotted 1px solid #50E3C2; }
 
+input:checked ~ label[for='note1'] p {
+  background: red; }
+
 body {
   font-family: 'Fira Sans', sans-serif; }
   body > header#masthead {
