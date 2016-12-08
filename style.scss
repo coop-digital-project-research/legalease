@@ -45,11 +45,13 @@ div.bubble {
     
   }
 
-
   footer {
     border-top: 1px dashed $grey;
     margin-top: 1rem;
     padding-top: 1rem;
+    span {
+      background: none;
+    }
     a {
       float: right;
       background: $green;
@@ -75,7 +77,7 @@ label {
   position: relative;
   display: block;
   &:hover {
-    > p span {
+    span {
       background: rgba($yellow, 0.1);
     }
   }
@@ -84,7 +86,7 @@ label {
 // Existing highlights
 
 label.noteExisting {
-  > p span {
+  span {
     background: $yellow;
   }
   div.bubble {
