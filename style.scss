@@ -17,7 +17,9 @@ a {
   border-bottom: dotted 1px solid $green;
 }
 
-
+textarea:focus, input:focus{
+    outline: none;
+}
 
 // Bubble
 
@@ -35,14 +37,17 @@ div.bubble {
   line-height: 1.4rem;
 
   div {
+    margin-top: 0.4rem;
     img {
       width: 24px;
       height: 24px;
+      float: left;
+      margin-right: 0.4rem;
     }
     cite {
       color: #d3d3d3;
+      line-height: 24px;
     }
-    
   }
 
   footer {
@@ -516,6 +521,29 @@ input#note30 {
   }
 }
 
+h1#strapline {
+  font-size: 2.8rem;
+}
+
+input#search, a.search {
+  font-size: 2.2rem;
+  font-family: 'Fira Sans', sans-serif;
+  padding: 1.2rem;
+}
+
+input#search {
+  width: 60%;
+  font-weight: 300;
+  height: 6rem;
+  border: none;
+}
+
+a.search {
+  background: $green;
+  height: 6rem;
+  line-height: 6rem;
+  text-decoration: none;
+}
 
 body {
   font-family: 'Fira Sans', sans-serif;
