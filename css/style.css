@@ -21,7 +21,13 @@ div.bubble {
   box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   border: 1px solid #9B9B9B;
-  border-top-left-radius: 0; }
+  border-top-left-radius: 0;
+  line-height: 1.4rem; }
+  div.bubble div img {
+    width: 24px;
+    height: 24px; }
+  div.bubble div cite {
+    color: #d3d3d3; }
   div.bubble footer {
     border-top: 1px dashed #9B9B9B;
     margin-top: 1rem;
