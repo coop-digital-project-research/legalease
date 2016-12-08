@@ -1,0 +1,122 @@
+$green: #50E3C2;
+$yellow: #E8D925;
+$grey: #9B9B9B;
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+div.container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+a {
+  color: inherit;
+  border-bottom: dotted 1px solid $green;
+}
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+  > header {
+    height: 60px;
+    width: 100%;
+    background: $green;
+    margin-bottom: 2.8rem;
+    h1 {
+      font-family: 'Bree Serif', serif;
+      font-size: 1.8rem;
+      line-height: 52px;
+    }
+  }
+  section#product {
+    > header {
+      width: 100%;
+      overflow: hidden;
+      margin-bottom: 2.8rem;
+      img {
+        float: left;
+        margin-right: 1.2rem;
+      }
+      h1 {
+        padding: 0;
+        margin: 0;
+      }
+    }
+    nav {
+      width: 100%;
+      font-weight: 500;
+      font-size: 1.2rem;
+      margin-bottom: 2.8rem;
+      ul {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        a {
+          display: inline-block;
+          width: 40%;
+          padding: 0 1.6rem;
+          &.active {
+            border-top: 1px solid $grey;
+            border-left: 1px solid $grey;
+            border-right: 1px solid $grey;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+          }
+          &:not(.active) {
+            border-bottom: 1px solid $grey;
+          }
+        }
+        li {
+          white-space: none;
+          display: inline-block;
+          height: 80px;
+          line-height: 80px;
+        }
+      }
+    }
+  }
+  article {
+    ul#snippets {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        background: $grey;
+        border-radius: 8px;
+        padding: 1.2rem;
+        box-sizing: border-box;
+      li {
+        margin-left: 8rem;
+        background: white;
+        padding: 1.2rem;
+        border-radius: 4px;
+        div.vote-count {
+          width: 6.8rem;
+          border-radius: 4px;
+          margin-left: -9rem;
+          margin-top: -1.2rem;
+          padding: 1.2rem;
+          background: white;
+          box-sizing: border-box;
+          float: left;
+          text-align: center;
+        }
+        blockquote.selection {
+          background: $yellow;
+          line-height: 1.8rem;
+          display: inline;
+          margin: 0;
+        }
+        article.comment {
+          blockquote.annotation {
+            font-size: 1.4rem;
+            footer {
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
