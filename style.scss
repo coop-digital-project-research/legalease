@@ -18,7 +18,7 @@ a {
 
 body {
   font-family: 'Fira Sans', sans-serif;
-  > header {
+  > header#masthead {
     height: 60px;
     width: 100%;
     background: $green;
@@ -78,6 +78,9 @@ body {
     }
   }
   article {
+    h1 {
+      font-size: 1.8rem;
+    }
     ul#snippets {
         width: 100%;
         padding: 0;
