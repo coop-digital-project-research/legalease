@@ -1,17 +1,39 @@
 html, body {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  background: #f8f8f8; }
 
 div.container {
-  width: 60%;
+  width: 800px;
   margin: 0 auto; }
 
 a {
   color: inherit;
   border-bottom: dotted 1px solid #50E3C2; }
 
-input:checked ~ label[for='note1'] p {
-  background: red; }
+div.bubble {
+  display: none; }
+
+label {
+  position: relative;
+  display: block; }
+
+input#note1 {
+  display: none; }
+  input#note1:checked ~ label[for='note1'] span {
+    background: #E8D925; }
+  input#note1:checked ~ label[for='note1'] div.bubble {
+    background: white;
+    width: 10rem;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -14rem;
+    padding: 1.2rem;
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    border: 1px solid #9B9B9B;
+    border-top-left-radius: 0; }
 
 body {
   font-family: 'Fira Sans', sans-serif; }
@@ -38,8 +60,7 @@ body {
   body section#product nav {
     width: 100%;
     font-weight: 500;
-    font-size: 1.2rem;
-    margin-bottom: 2.8rem; }
+    font-size: 1.2rem; }
     body section#product nav ul {
       width: 100%;
       padding: 0;
@@ -53,7 +74,8 @@ body {
           border-left: 1px solid #9B9B9B;
           border-right: 1px solid #9B9B9B;
           border-top-left-radius: 8px;
-          border-top-right-radius: 8px; }
+          border-top-right-radius: 8px;
+          background: white; }
         body section#product nav ul a:not(.active) {
           border-bottom: 1px solid #9B9B9B; }
       body section#product nav ul li {
@@ -61,56 +83,69 @@ body {
         display: inline-block;
         height: 80px;
         line-height: 80px; }
-  body article h1 {
-    font-size: 1.8rem; }
-  body article ul#snippets {
-    width: 100%;
-    padding: 0;
-    margin: 0; }
-    body article ul#snippets li {
-      list-style: none;
-      background: #9B9B9B;
-      border-radius: 8px;
-      padding: 1.2rem;
-      box-sizing: border-box;
-      margin-bottom: 1.2rem; }
-      body article ul#snippets li section {
-        margin: 0 0 2.8rem 8rem;
-        background: white;
+  body article {
+    background: white;
+    padding: 1.2rem; }
+    body article.policy {
+      line-height: 1.8rem; }
+      body article.policy > * {
+        width: 80%; }
+    body article h1 {
+      font-size: 1.8rem; }
+    body article ul#snippets {
+      width: 100%;
+      padding: 0;
+      margin: 0; }
+      body article ul#snippets li {
+        list-style: none;
+        background: #eaf6f4;
+        border-radius: 8px;
         padding: 1.2rem;
-        border-radius: 4px; }
-        body article ul#snippets li section div.vote-count {
-          width: 6.8rem;
-          border-radius: 4px;
-          margin-left: -9rem;
-          margin-top: -1.2rem;
-          padding: 1.2rem;
+        box-sizing: border-box;
+        margin-bottom: 1.2rem; }
+        body article ul#snippets li section {
+          margin: 0 0 2.8rem 8rem;
           background: white;
+          padding: 1.2rem;
+          border-radius: 4px;
           box-sizing: border-box;
-          float: left;
-          text-align: center; }
-        body article ul#snippets li section blockquote.selection {
-          background: #E8D925;
-          line-height: 1.8rem;
-          display: inline;
-          margin: 0; }
-        body article ul#snippets li section article.comment {
-          box-sizing: border-box; }
-          body article ul#snippets li section article.comment blockquote.annotation {
-            font-size: 1.4rem; }
-            body article ul#snippets li section article.comment blockquote.annotation footer {
-              margin-top: 1.2rem;
-              height: 24px;
-              font-size: 0.8rem;
-              line-height: 26px; }
-              body article ul#snippets li section article.comment blockquote.annotation footer img {
-                width: 24px;
+          box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+          border: 1px solid #9B9B9B;
+          border-top-left-radius: 0; }
+          body article ul#snippets li section div.vote-count {
+            width: 6.8rem;
+            color: white;
+            font-size: 1.6rem;
+            border-radius: 4px;
+            margin-left: -9rem;
+            margin-top: -1.2rem;
+            padding: 1.2rem;
+            background: #50E3C2;
+            box-sizing: border-box;
+            float: left;
+            text-align: center; }
+          body article ul#snippets li section blockquote.selection {
+            background: #E8D925;
+            line-height: 1.8rem;
+            display: inline;
+            margin: 0; }
+          body article ul#snippets li section article.comment {
+            box-sizing: border-box; }
+            body article ul#snippets li section article.comment blockquote.annotation {
+              font-size: 1.4rem; }
+              body article ul#snippets li section article.comment blockquote.annotation footer {
+                margin-top: 1.2rem;
                 height: 24px;
-                float: left;
-                margin-right: 0.4rem; }
-          body article ul#snippets li section article.comment.reply {
-            color: #50E3C2;
-            margin-top: 2.4rem;
-            display: block; }
+                font-size: 0.8rem;
+                line-height: 26px; }
+                body article ul#snippets li section article.comment blockquote.annotation footer img {
+                  width: 24px;
+                  height: 24px;
+                  float: left;
+                  margin-right: 0.4rem; }
+            body article ul#snippets li section article.comment.reply {
+              color: #50E3C2;
+              margin-top: 2.4rem;
+              display: block; }
 
 /*# sourceMappingURL=style.css.map */
