@@ -35,9 +35,13 @@ div.bubble {
   border: 1px solid $grey;
   border-top-left-radius: 0;
   line-height: 1.4rem;
+  textarea {
+    font-size: 1rem;
+    width: 100%;
+  }
 
   div {
-    margin-top: 0.4rem;
+    margin-bottom: 0.6rem;
     img {
       width: 24px;
       height: 24px;
@@ -47,6 +51,7 @@ div.bubble {
     cite {
       color: #d3d3d3;
       line-height: 24px;
+      font-size: 0.8rem;
     }
   }
 
@@ -96,6 +101,9 @@ label.noteExisting {
   }
   div.bubble {
     display: block !important;
+    div {
+      margin-top: 0.4rem;
+    }
   }
 }
 
@@ -571,6 +579,7 @@ body {
       h1 {
         padding: 0;
         margin: 0;
+        font-size: 2.4rem;
       }
     }
     nav {
