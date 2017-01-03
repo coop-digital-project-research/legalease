@@ -327,6 +327,8 @@ body {
       font-family: 'Bree Serif', serif;
       font-size: 1.8rem;
       line-height: 52px; }
+  body#index h2 {
+    font-weight: 400; }
   body section#product > header {
     position: relative;
     width: 100%;
