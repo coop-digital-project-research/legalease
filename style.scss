@@ -553,6 +553,24 @@ a.search {
   text-decoration: none;
 }
 
+a.small-btn {
+    background: white;
+    padding: 1.2rem;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: 1px solid #9B9B9B;
+    &.watch-btn {
+      position: absolute;
+      top: 0;
+      right: 0;
+      img#eye {
+        margin-right: 0.8rem;
+      }
+    }
+}
+
+
 body {
   font-family: 'Fira Sans', sans-serif;
   > header#masthead {
@@ -568,6 +586,7 @@ body {
   }
   section#product {
     > header {
+      position: relative;
       width: 100%;
       overflow: hidden;
       margin-bottom: 2.8rem;
