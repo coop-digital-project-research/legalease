@@ -1,0 +1,450 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  background: #f8f8f8; }
+
+div.container {
+  width: 800px;
+  margin: 0 auto; }
+
+a {
+  color: inherit;
+  border-bottom: dotted 1px solid #50E3C2; }
+
+textarea:focus, input:focus {
+  outline: none; }
+
+div.bubble {
+  background: white;
+  width: 10rem;
+  position: absolute;
+  top: 0;
+  right: -14rem;
+  padding: 1.2rem;
+  -webkit-box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  border: 1px solid #9B9B9B;
+  border-top-left-radius: 0;
+  line-height: 1.4rem; }
+  div.bubble textarea {
+    font-size: 1rem;
+    width: 100%; }
+  div.bubble div {
+    margin-bottom: 0.6rem; }
+    div.bubble div img {
+      width: 24px;
+      height: 24px;
+      float: left;
+      margin-right: 0.4rem; }
+    div.bubble div cite {
+      color: #d3d3d3;
+      line-height: 24px;
+      font-size: 0.8rem; }
+  div.bubble footer {
+    border-top: 1px dashed #9B9B9B;
+    margin-top: 1rem;
+    padding-top: 1rem; }
+    div.bubble footer span {
+      background: none; }
+    div.bubble footer a {
+      float: right;
+      background: #50E3C2;
+      display: block;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      font-weight: 500;
+      text-decoration: none;
+      border-radius: 4px; }
+
+div.bubble {
+  display: none; }
+
+label {
+  position: relative;
+  display: block; }
+  label:hover span {
+    background: rgba(232, 217, 37, 0.1); }
+
+label.noteExisting span {
+  background: #E8D925; }
+label.noteExisting div.bubble {
+  display: block !important; }
+  label.noteExisting div.bubble div {
+    margin-top: 0.4rem; }
+
+input#note1 {
+  display: none; }
+  input#note1:checked ~ label[for='note1'] span {
+    background: #E8D925; }
+  input#note1:checked ~ label[for='note1'] div.bubble {
+    display: block; }
+
+input#note2 {
+  display: none; }
+  input#note2:checked ~ label[for='note2'] span {
+    background: #E8D925; }
+  input#note2:checked ~ label[for='note2'] div.bubble {
+    display: block; }
+
+input#note3 {
+  display: none; }
+  input#note3:checked ~ label[for='note3'] span {
+    background: #E8D925; }
+  input#note3:checked ~ label[for='note3'] div.bubble {
+    display: block; }
+
+input#note4 {
+  display: none; }
+  input#note4:checked ~ label[for='note4'] span {
+    background: #E8D925; }
+  input#note4:checked ~ label[for='note4'] div.bubble {
+    display: block; }
+
+input#note5 {
+  display: none; }
+  input#note5:checked ~ label[for='note5'] span {
+    background: #E8D925; }
+  input#note5:checked ~ label[for='note5'] div.bubble {
+    display: block; }
+
+input#note6 {
+  display: none; }
+  input#note6:checked ~ label[for='note6'] span {
+    background: #E8D925; }
+  input#note6:checked ~ label[for='note6'] div.bubble {
+    display: block; }
+
+input#note7 {
+  display: none; }
+  input#note7:checked ~ label[for='note7'] span {
+    background: #E8D925; }
+  input#note7:checked ~ label[for='note7'] div.bubble {
+    display: block; }
+
+input#note8 {
+  display: none; }
+  input#note8:checked ~ label[for='note8'] span {
+    background: #E8D925; }
+  input#note8:checked ~ label[for='note8'] div.bubble {
+    display: block; }
+
+input#note9 {
+  display: none; }
+  input#note9:checked ~ label[for='note9'] span {
+    background: #E8D925; }
+  input#note9:checked ~ label[for='note9'] div.bubble {
+    display: block; }
+
+input#note10 {
+  display: none; }
+  input#note10:checked ~ label[for='note10'] span {
+    background: #E8D925; }
+  input#note10:checked ~ label[for='note10'] div.bubble {
+    display: block; }
+
+input#note11 {
+  display: none; }
+  input#note11:checked ~ label[for='note11'] span {
+    background: #E8D925; }
+  input#note11:checked ~ label[for='note11'] div.bubble {
+    display: block; }
+
+input#note12 {
+  display: none; }
+  input#note12:checked ~ label[for='note12'] span {
+    background: #E8D925; }
+  input#note12:checked ~ label[for='note12'] div.bubble {
+    display: block; }
+
+input#note13 {
+  display: none; }
+  input#note13:checked ~ label[for='note13'] span {
+    background: #E8D925; }
+  input#note13:checked ~ label[for='note13'] div.bubble {
+    display: block; }
+
+input#note14 {
+  display: none; }
+  input#note14:checked ~ label[for='note14'] span {
+    background: #E8D925; }
+  input#note14:checked ~ label[for='note14'] div.bubble {
+    display: block; }
+
+input#note15 {
+  display: none; }
+  input#note15:checked ~ label[for='note15'] span {
+    background: #E8D925; }
+  input#note15:checked ~ label[for='note15'] div.bubble {
+    display: block; }
+
+input#note16 {
+  display: none; }
+  input#note16:checked ~ label[for='note16'] span {
+    background: #E8D925; }
+  input#note16:checked ~ label[for='note16'] div.bubble {
+    display: block; }
+
+input#note17 {
+  display: none; }
+  input#note17:checked ~ label[for='note17'] span {
+    background: #E8D925; }
+  input#note17:checked ~ label[for='note17'] div.bubble {
+    display: block; }
+
+input#note18 {
+  display: none; }
+  input#note18:checked ~ label[for='note18'] span {
+    background: #E8D925; }
+  input#note18:checked ~ label[for='note18'] div.bubble {
+    display: block; }
+
+input#note19 {
+  display: none; }
+  input#note19:checked ~ label[for='note19'] span {
+    background: #E8D925; }
+  input#note19:checked ~ label[for='note19'] div.bubble {
+    display: block; }
+
+input#note20 {
+  display: none; }
+  input#note20:checked ~ label[for='note20'] span {
+    background: #E8D925; }
+  input#note20:checked ~ label[for='note20'] div.bubble {
+    display: block; }
+
+input#note21 {
+  display: none; }
+  input#note21:checked ~ label[for='note21'] span {
+    background: #E8D925; }
+  input#note21:checked ~ label[for='note21'] div.bubble {
+    display: block; }
+
+input#note22 {
+  display: none; }
+  input#note22:checked ~ label[for='note22'] span {
+    background: #E8D925; }
+  input#note22:checked ~ label[for='note22'] div.bubble {
+    display: block; }
+
+input#note23 {
+  display: none; }
+  input#note23:checked ~ label[for='note23'] span {
+    background: #E8D925; }
+  input#note23:checked ~ label[for='note23'] div.bubble {
+    display: block; }
+
+input#note24 {
+  display: none; }
+  input#note24:checked ~ label[for='note24'] span {
+    background: #E8D925; }
+  input#note24:checked ~ label[for='note24'] div.bubble {
+    display: block; }
+
+input#note25 {
+  display: none; }
+  input#note25:checked ~ label[for='note25'] span {
+    background: #E8D925; }
+  input#note25:checked ~ label[for='note25'] div.bubble {
+    display: block; }
+
+input#note26 {
+  display: none; }
+  input#note26:checked ~ label[for='note26'] span {
+    background: #E8D925; }
+  input#note26:checked ~ label[for='note26'] div.bubble {
+    display: block; }
+
+input#note27 {
+  display: none; }
+  input#note27:checked ~ label[for='note27'] span {
+    background: #E8D925; }
+  input#note27:checked ~ label[for='note27'] div.bubble {
+    display: block; }
+
+input#note28 {
+  display: none; }
+  input#note28:checked ~ label[for='note28'] span {
+    background: #E8D925; }
+  input#note28:checked ~ label[for='note28'] div.bubble {
+    display: block; }
+
+input#note29 {
+  display: none; }
+  input#note29:checked ~ label[for='note29'] span {
+    background: #E8D925; }
+  input#note29:checked ~ label[for='note29'] div.bubble {
+    display: block; }
+
+input#note30 {
+  display: none; }
+  input#note30:checked ~ label[for='note30'] span {
+    background: #E8D925; }
+  input#note30:checked ~ label[for='note30'] div.bubble {
+    display: block; }
+
+h1#strapline {
+  font-size: 2.8rem; }
+
+input#search, a.search {
+  font-size: 2.2rem;
+  font-family: 'Fira Sans', sans-serif;
+  padding: 1.2rem; }
+
+input#search {
+  width: 60%;
+  font-weight: 300;
+  height: 6rem;
+  border: none; }
+
+a.search {
+  background: #50E3C2;
+  height: 6rem;
+  line-height: 6rem;
+  text-decoration: none; }
+
+a.small-btn {
+  background: white;
+  padding: 1.2rem;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  border: 1px solid #9B9B9B; }
+  a.small-btn.watch-btn {
+    position: absolute;
+    top: 0;
+    right: 0; }
+    a.small-btn.watch-btn img#eye {
+      margin-right: 0.8rem; }
+
+body {
+  font-family: 'Fira Sans', sans-serif; }
+  body > header#masthead {
+    height: 60px;
+    width: 100%;
+    background: #50E3C2;
+    margin-bottom: 2.8rem; }
+    body > header#masthead h1 {
+      font-family: 'Bree Serif', serif;
+      font-size: 1.8rem;
+      line-height: 52px;
+      margin: 0; }
+  body.index h2 {
+    font-weight: 400; }
+  body section#product > header {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 2.8rem; }
+    body section#product > header img {
+      float: left;
+      margin-right: 1.2rem;
+      border-radius: 4px; }
+    body section#product > header h1 {
+      padding: 0;
+      margin: 0;
+      font-size: 2.4rem;
+      line-height: 2.4rem; }
+  body section#product nav {
+    width: 100%;
+    font-weight: 500;
+    font-size: 1.6rem; }
+    body section#product nav ul {
+      width: 100%;
+      padding: 0;
+      margin: 0; }
+      body section#product nav ul a {
+        display: inline-block;
+        width: 40%;
+        padding: 0 1.6rem; }
+        body section#product nav ul a.active {
+          border-top: 1px solid #9B9B9B;
+          border-left: 1px solid #9B9B9B;
+          border-right: 1px solid #9B9B9B;
+          border-top-left-radius: 8px;
+          border-top-right-radius: 8px;
+          background: white; }
+        body section#product nav ul a:not(.active) {
+          border-bottom: 1px solid #9B9B9B; }
+      body section#product nav ul li {
+        white-space: none;
+        display: inline-block;
+        height: 80px;
+        line-height: 80px; }
+  body article {
+    background: white;
+    padding: 1.2rem; }
+    body article.policy {
+      line-height: 1.8rem; }
+      body article.policy > * {
+        width: 80%; }
+    body article h1 {
+      font-size: 1.8rem; }
+    body article ul#snippets {
+      width: 100%;
+      padding: 0;
+      margin: 0; }
+      body article ul#snippets li {
+        list-style: none;
+        background: #eaf6f4;
+        border-radius: 8px;
+        padding: 1.2rem;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        margin-bottom: 1.2rem; }
+        body article ul#snippets li section {
+          margin: 0 0 2.8rem 8rem;
+          background: white;
+          padding: 1.2rem;
+          border-radius: 4px;
+          -webkit-box-sizing: border-box;
+                  box-sizing: border-box;
+          -webkit-box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+                  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+          border: 1px solid #9B9B9B;
+          border-top-left-radius: 0; }
+          body article ul#snippets li section div.vote-count {
+            width: 6.8rem;
+            font-size: 1.6rem;
+            border-radius: 4px;
+            margin-left: -9rem;
+            margin-top: -1.2rem;
+            padding: 1.2rem;
+            background: #50E3C2;
+            -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+            float: left;
+            text-align: center; }
+          body article ul#snippets li section blockquote.selection {
+            background: #E8D925;
+            line-height: 1.8rem;
+            display: inline;
+            margin: 0; }
+          body article ul#snippets li section article.comment {
+            -webkit-box-sizing: border-box;
+                    box-sizing: border-box; }
+            body article ul#snippets li section article.comment blockquote.annotation {
+              font-size: 1.4rem; }
+              body article ul#snippets li section article.comment blockquote.annotation footer {
+                margin-top: 1.2rem;
+                height: 24px;
+                font-size: 0.8rem;
+                line-height: 26px; }
+                body article ul#snippets li section article.comment blockquote.annotation footer img {
+                  width: 24px;
+                  height: 24px;
+                  float: left;
+                  margin-right: 0.4rem; }
+            body article ul#snippets li section article.comment.reply {
+              background: #f8f8f8;
+              border-radius: 4px;
+              margin-left: 3.4rem;
+              border-left: 8px solid #000101; }
+              body article ul#snippets li section article.comment.reply blockquote {
+                display: inline-block; }
+                body article ul#snippets li section article.comment.reply blockquote footer {
+                  background: #000101;
+                  color: #50E3C2;
+                  border-top-right-radius: 4px;
+                  border-bottom-right-radius: 4px; }
